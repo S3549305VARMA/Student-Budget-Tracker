@@ -14,17 +14,29 @@ fun AppNavigation() {
 
     NavHost(navController = navController, startDestination = "splash") {
 <<<<<<< HEAD
+<<<<<<< HEAD
         composable("login") { LoginScreen(navController) }
         composable("register") { RegisterScreen(navController) }
         composable("dashboard") { DashboardScreen(navController) }
         composable("add_expense") { AddExpenseScreen(navController) }
         composable("expense_list") { ExpenseListScreen(navController) }
 =======
-        composable("splash") { SplashScreen(navController) }
+
         composable("login") { LoginScreen(navController) }
         composable("register") { RegisterScreen(navController) }
         composable("dashboard") { DashboardScreen(navController) }
+>>>>>>> 35952a9cc352f589beb934e978aca9be70ab59cc
+=======
+        composable("splash") { SplashScreen(navController) }
+        composable("login") { LoginScreen(navController) }
+        composable("register") { RegisterScreen(navController) }
+<<<<<<< HEAD
+        composable("dashboard") { DashboardScreen(navController) }
 >>>>>>> ecceccd1e9a75e5a24599df572fdbbeff2d13697
+=======
+
+>>>>>>> d155b624ad3bfdeed38b2eb5673651b7353d91ce
+>>>>>>> 35952a9cc352f589beb934e978aca9be70ab59cc
         composable(
             "edit_expense/{expenseId}",
             arguments = listOf(navArgument("expenseId") { type = NavType.IntType })
@@ -36,7 +48,11 @@ fun AppNavigation() {
             )
 =======
 
+<<<<<<< HEAD
 >>>>>>> ecceccd1e9a75e5a24599df572fdbbeff2d13697
+=======
+>>>>>>> d155b624ad3bfdeed38b2eb5673651b7353d91ce
+>>>>>>> 35952a9cc352f589beb934e978aca9be70ab59cc
         }
     }
 }
